@@ -2,11 +2,11 @@
 import { reload, updateProfile } from 'firebase/auth'
 import React, { useEffect, useState } from 'react'
 import { useContext } from 'react'
-import { AuthContext } from '../../context/AuthContext'
+import { AuthContext } from '../context/AuthContext'
 import { useRouter } from 'next/navigation'
 import { doc ,getDocs,collection,updateDoc} from 'firebase/firestore'
-import { db,storage } from '../../firebase'
-import Nav from '../../components/Nav'
+import { db,storage } from '../firebase'
+
 import {  ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 
