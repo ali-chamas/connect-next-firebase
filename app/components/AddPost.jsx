@@ -69,9 +69,10 @@ const addPost=async(e)=>{
 
 
   return (
-    <div className=' bg-slate-200 w-auto h-auto p-4 mx-5 my-2 lg:mx-20'>
-      <form className='flex items-center justify-center gap-4' onSubmit={addPost}>
-        <input type="text" placeholder="what's on your mind?" className='p-3 rounded-3xl'  onChange={(event)=>{
+    <>
+    <div className=' bg-slate-200 h-auto p-4 mx-5 my-2 lg:mx-20 w-auto'>
+      <form className='flex items-center  gap-4 ' onSubmit={addPost}>
+        <input type="text" placeholder="what's on your mind?" className='p-3 rounded-3xl lg:ml-64 w-1/3'  onChange={(event)=>{
             if(event.target.value==='')setDisable(true)
             else setDisable(false)
             setCaption(event.target.value)}}/>
@@ -83,6 +84,7 @@ const addPost=async(e)=>{
             <button disabled={disable} type='submit' className='py-2 px-4 bg-purple-800 text-white rounded-3xl hover:opacity-80 disabled:opacity-70'>post</button>
       </form>
     </div>
+    </>
   )
 }
 

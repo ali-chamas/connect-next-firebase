@@ -29,7 +29,7 @@ const Nav = () => {
      
      loggedIn?
     <div className=' h-20 bg-slate-100 shadow-md flex justify-between items-center px-16' >
-        <Link href='/home'><h1 className='font-bold text-2xl text-purple-700'>Connect.</h1>
+        <Link href='/home'><h1 className='font-bold text-2xl text-purple-700 '>Connect.</h1>
         </Link>
        <div className='flex  justify-around items-center gap-5'>
            

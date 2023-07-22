@@ -57,7 +57,7 @@ useEffect(()=>{
     <>
     { posts.map((post)=> (
     
-    <div className='m-5 bg-white shadow-md w-96 h-auto flex flex-col items-center lg:w-3/4'>
+    <div className='m-5 bg-white shadow-md w-auto  h-auto flex flex-col items-center lg:w-3/4'>
 
            
 
